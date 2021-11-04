@@ -5,8 +5,8 @@ Ce programme permet de commander un poêle à granule, basé sur la technologie 
 
 Il n'y a pas de dialogue direct avec le poêle
 
-Il est très grandement basé sur le travail de Anthony et EtienneME sur le forum suivant: https://community.jeedom.com/t/mcz-maestro-et-jeedom/6159/183  
-Git original: https://github.com/Anthony-55/maestro  
+Il est très grandement basé sur le travail de Anthony et EtienneME sur le forum suivant: <https://community.jeedom.com/t/mcz-maestro-et-jeedom/6159/183>  
+Git original: <https://github.com/Anthony-55/maestro>  
 Ce git a été créé pour aider, je ne souhaite en aucun cas m'approprier ce code qui n'est pas le mien, et sans lequel ce programme n'existerait pas.
 
 Ce programme, bien que fonctionnel, est tout sauf optimisé (code approximatif, code restant non utilisé du travail sur lequel il est basé.) N'hésitez pas à l'améliorer et à contribuer ;)  
@@ -17,7 +17,7 @@ Ce programme nécéssite :
 * Python3
 * paho-mqtt
 * websocket (code à supprimer pour s'en passer)
-* Socket.io python client: https://python-socketio.readthedocs.io/en/latest/client.html
+* Socket.io python client: <https://python-socketio.readthedocs.io/en/latest/client.html>
 
 Pour l'installer (même procédure que celle présentée par Anthony sur son git)
 ```sh
@@ -59,9 +59,9 @@ Les fichiers de log se trouvent dans le directory /var/log/maestro
 
 La doc et ainsi que le changelog sont disponibles aux url ci-dessous
 
-Doc:        https://henribi.github.io/Maestro_Remote/
+Doc:        <https://henribi.github.io/Maestro_Remote/>
 
-Changelog:  https://henribi.github.io/Maestro_Remote/changelog
+Changelog:  <https://henribi.github.io/Maestro_Remote/changelog>
 
 
 ## COMMANDES DU POELE
