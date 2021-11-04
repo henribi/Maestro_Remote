@@ -7,7 +7,7 @@ Il n'y a pas de dialogue direct avec le poêle
 
 Il est très grandement basé sur le travail de Anthony et EtienneME sur le forum suivant: https://community.jeedom.com/t/mcz-maestro-et-jeedom/6159/183  
 Git original: https://github.com/Anthony-55/maestro  
-J'ai créé ce git pour aider certaines personnes qui le demandaient, je ne souhaite en aucun cas m'approprier le code qui n'est pas le mien, et sans lequel ce programme n'existerait pas.
+Ce git a été créé pour aider, je ne souhaite en aucun cas m'approprier ce code qui n'est pas le mien, et sans lequel ce programme n'existerait pas.
 
 Ce programme, bien que fonctionnel, est tout sauf optimisé (code approximatif, code restant non utilisé du travail sur lequel il est basé.) N'hésitez pas à l'améliorer et à contribuer ;)  
 Le *changelog* donne les différentes évolutions du code.
@@ -21,7 +21,7 @@ Ce programme nécéssite :
 
 Pour l'installer (même procédure que celle présentée par Anthony sur son git)
 ```sh
-git clone https://github.com/pipolaq/maestro.git
+git clone https://github.com/henribi/maestro_remote.git
 cd maestro
 ```
 
@@ -54,6 +54,14 @@ systemctl restart maestro.service
 ## LOGS
 
 Les fichiers de log se trouvent dans le directory /var/log/maestro
+
+## DOCS - CHANGELOG
+
+La doc et ainsi que le changelog sont disponibles aux url ci-dessous
+
+Doc:        https://henribi.github.io/Maestro_Remote/
+
+Changelog:  https://henribi.github.io/Maestro_Remote/changelog
 
 
 ## COMMANDES DU POELE
