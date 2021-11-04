@@ -5,8 +5,8 @@ Ce programme permet de commander un poêle à granule, basé sur la technologie 
 
 Il n'y a pas de dialogue direct avec le poêle
 
-Il est très grandement basé sur le travail de Anthony et EtienneME sur le forum suivant: https://community.jeedom.com/t/mcz-maestro-et-jeedom/6159/183
-Git original: https://github.com/Anthony-55/maestro
+Il est très grandement basé sur le travail de Anthony et EtienneME sur le forum suivant: https://community.jeedom.com/t/mcz-maestro-et-jeedom/6159/183  
+Git original: https://github.com/Anthony-55/maestro  
 J'ai créé ce git pour aider certaines personnes qui le demandaient, je ne souhaite en aucun cas m'approprier le code qui n'est pas le mien, et sans lequel ce programme n'existerait pas.
 
 Ce programme, bien que fonctionnel, est tout sauf optimisé (code approximatif, code restant non utilisé du travail sur lequel il est basé.) N'hésitez pas à l'améliorer et à contribuer ;)  
@@ -141,3 +141,4 @@ Consigne de température:  42,xx  avec xx le double de la température pour supp
 Mise à jour de la date et heure du poêle. (nécessite cette version du script)
     9001,DDMMYYYYHHmm
     exemple:  9001,011120212010      pour 01/11/2021 20h10
+`
