@@ -21,7 +21,7 @@ Ce programme nécéssite :
 
 Pour l'installer (même procédure que celle présentée par Anthony sur son git)
 ```sh
-git clone https://github.com/henribi/maestro_remote.git
+git clone https://github.com/henribi/Maestro_Remote.git
 cd maestro
 ```
 
