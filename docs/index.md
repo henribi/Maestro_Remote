@@ -5,6 +5,17 @@ Ce programme permet de commander un poêle à granule, basé sur la technologie 
 
 Il n'y a pas de dialogue direct avec le poêle
 
+> **Prérequis**
+>
+>Votre poêle doit être connecté au wifi de votre domicile. Il doit pouvoir être contrôlé par l'application MCZ Maestro à partir de votre smartphone en 4G ou hors de votre domicile.
+>
+>> ***Attention***
+>>
+>> Ce script n'est pas compatible avec les poêle qui utilisent l'app Maestro MCZ et le protocole Maestro+
+>>
+>>
+
+
 Il est très grandement basé sur le travail de Anthony et EtienneME sur le forum suivant: <https://community.jeedom.com/t/mcz-maestro-et-jeedom/6159/183>  
 Git original: <https://github.com/Anthony-55/maestro>  
 Ce git a été créé pour aider, je ne souhaite en aucun cas m'approprier ce code qui n'est pas le mien, et sans lequel ce programme n'existerait pas.
