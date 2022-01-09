@@ -11,7 +11,7 @@ Il n'y a pas de dialogue direct avec le poêle
 >
 >> ***Attention***
 >>
->> Ce script n'est pas compatible avec les poêle qui utilisent l'app Maestro MCZ et le protocole Maestro+
+>> Ce script n'est pas compatible avec les poêles qui utilisent l'app Maestro MCZ et le protocole Maestro+
 >>
 >>
 
@@ -170,3 +170,48 @@ Mise à jour de la date et heure du poêle. (nécessite cette version du script)
   9001,DDMMYYYYHHmm  
   exemple:  9001,011120212010      pour 01/11/2021 20h10
 
+
+## VERIFICATION DE FONCTIONNEMENT et RECUPERATION
+
+Il arrive que le script se bloque ou que la connexion avec MCZ soit perdue. Les informations du poêle ne sont plus mise à jour. Il est facile de détecter ce cas et de relancer le script.
+
+### Suivi du fonctionnement
+
+J'utilise dans Jeedom un scenario programmé qui s'exécute toutes les 5 minutes ( \*/5 \* \* \* \* )
+
+Ce scenario contient le bloc code ci-dessous.
+
+```
+// Recupere current time comme timestamp
+$ts_curtime = time();
+$curtime = date("d/m/Y H:i:s", $ts_curtime);
+$scenario->setLog('=== ts_curtime: ' . $ts_curtime . ' =.=  '. $curtime);
+
+// Recupere last collectDate of PUBmcz command within MQTT
+$cmd = cmd::byString('#[Chauffage][PUBmcz][PUBmcz]#');   // <--- nom de commande à adapter 
+$cmd->execCmd();
+$collectDate = $cmd->getCollectDate();
+$ts_collectdate = strtotime($collectDate);
+$scenario->setLog('=== ts_collect: ' . $ts_collectdate . ' =.=  '. date("d/m/Y H:i:s", $ts_collectdate) );
+
+//comparaison ...
+if (($ts_curtime - $ts_collectdate) > 300) {
+  $scenario->setLog('!!!!!  La mise à jour de maestro a un problème  ===>  Lancement du script de restart');
+    log::add('scenario','info', '!!!!!  La mise à jour de maestro a un problème  ===>  Lancement du script de restart');
+    cmd::byString('#[Chauffage][Maestro][restart]#')->execCmd();  // <--- nom de commande script à adapter  
+}
+```
+
+### Récupération
+
+La dernière ligne du bloc code lance un script qui est défini dans le plugin script telle que ci-dessous.
+
+![Script](../images/script.png)
+
+Le contenu du script /var/www/html/plugins/script/data/restartmaestro.sh contient ceci
+
+```
+#!/bin/bash
+
+sudo systemctl restart maestro
+```
