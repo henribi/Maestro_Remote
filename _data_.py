@@ -57,7 +57,7 @@ RecuperoInfo=[
 						[67, "Erreur A17 - Bourrage vis sans fin"],
 						[69, "Attente Alarmes securite"],
 						]],
-	[2,"Etat du ventilateur d'ambiance",[
+	[2,"Etat du ventilateur ambiance",[
 										[0, "Desactive"],
 										[1, "Niveau 1"],
 										[2, "Niveau 2"],
@@ -76,7 +76,7 @@ RecuperoInfo=[
 										[6, "Automatique"],
 										]],
 	[4,"Etat du ventilateur canalise 2",[
-										[0, "Désactive"],
+										[0, "Desactive"],
 										[1, "Niveau 1"],
 										[2, "Niveau 2"],
 										[3, "Niveau 3"],
@@ -145,7 +145,7 @@ RecuperoInfo=[
 	[33,"Minutes du poele (0-29)"],
 	[34,"Jour du poele (1-31)"],
 	[35,"Mois du poele (1-12)"],
-	[36,"Année du poele"],
+	[36,"Annee du poele"],
 	[37,"Heures de fonctionnement total (s)"],
 	[38,"Heures de fonctionnement en puissance 1 (s)"],
 	[39,"Heures de fonctionnement en puissance 2 (s)"],
