@@ -206,7 +206,7 @@ if (($ts_curtime - $ts_collectdate) > 300) {
 
 La dernière ligne du bloc code lance un script qui est défini dans le plugin script telle que ci-dessous.
 
-![Script](../images/script.png)
+![Script](./images/script.png)
 
 Le contenu du script /var/www/html/plugins/script/data/restartmaestro.sh contient ceci
 
